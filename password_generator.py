@@ -19,6 +19,10 @@ def generate_password(length, use_digits=True, use_special=True):
 length = int(input("Enter password length: ")) # Taking password length input from the user
 digits = input("Include digits? (yes/no): ").lower() == "yes" # Asking user whether to include digits
 special = input("Include special characters? (yes/no): ").lower() == "yes" # Asking user for special char
+
+
+# Calling the function with user preferences
 password = generate_password(length, digits, special)
 
+# Displaying the generated password
 print("\nGenerated Password:", password)
