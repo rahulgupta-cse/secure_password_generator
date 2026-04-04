@@ -4,12 +4,13 @@ import random # Importing random module to generate random characters
 import string # Importing string module to access character sets
 
 def generate_password(length, use_digits=True, use_special=True):
-    characters = string.ascii_letters
+    characters = string.ascii_letters # Start with all uppercase and lowercase letters
 
     if use_digits:
-        characters += string.digits
+        characters += string.digits # Add digits (0-9) if user wants digits
     if use_special:
-        characters += string.punctuation
+        characters += string.punctuation  # Add special characters if user wants them
+
 
     password = ''.join(random.choice(characters) for _ in range(length))
     return password
