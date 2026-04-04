@@ -1,6 +1,7 @@
 #Simple Program to Generate Password According to user choice
-import random
-import string
+
+import random # Importing random module to generate random characters
+import string # Importing string module to access character sets
 
 def generate_password(length, use_digits=True, use_special=True):
     characters = string.ascii_letters
