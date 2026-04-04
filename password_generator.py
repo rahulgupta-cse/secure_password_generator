@@ -11,15 +11,14 @@ def generate_password(length, use_digits=True, use_special=True):
     if use_special:
         characters += string.punctuation  # Add special characters if user wants them
 
-
+    # Randomly select characters from the combined set to form the password
     password = ''.join(random.choice(characters) for _ in range(length))
     return password
 
 # User input
-length = int(input("Enter password length: "))
-digits = input("Include digits? (yes/no): ").lower() == "yes"
-special = input("Include special characters? (yes/no): ").lower() == "yes"
-
+length = int(input("Enter password length: ")) # Taking password length input from the user
+digits = input("Include digits? (yes/no): ").lower() == "yes" # Asking user whether to include digits
+special = input("Include special characters? (yes/no): ").lower() == "yes" # Asking user for special char
 password = generate_password(length, digits, special)
 
 print("\nGenerated Password:", password)
