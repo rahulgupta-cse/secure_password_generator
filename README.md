@@ -12,6 +12,8 @@ This tool helps users create strong and secure passwords based on their preferen
 *  Optional digits
 *  Optional special characters
 *  Fast and lightweight CLI tool
+*  No external dependencies required
+*  Lightweight with minimal system resource usage
 
 ---
 
