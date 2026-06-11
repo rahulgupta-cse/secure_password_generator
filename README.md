@@ -14,6 +14,8 @@ This tool helps users create strong and secure passwords based on their preferen
 *  Fast and lightweight CLI tool
 *  No external dependencies required
 *  Lightweight with minimal system resource usage
+*  Open-source and easy to audit
+*  Suitable for personal and enterprise security needs
 
 ---
 
