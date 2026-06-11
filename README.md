@@ -31,7 +31,7 @@ This tool helps users create strong and secure passwords based on their preferen
 
 ```
 password-generator/
-│── main.py
+│── password_generator.py
 │── README.md
 ```
 
